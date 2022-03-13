@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+  max-width: 40rem;  
+  margin: auto; 
+}
+.Apps{
+  max-width: 70rem;
+  margin: 2rem auto;
+  background-image: linear-gradient(to right, red , yellow);
+
+}
+.activeJobs,
+.jobCredits {
+  height: 100%;
+}
+
+.activeJobs,
+.activeJobsContainer,
+.jobViewsContainer,
+.jobViewsBlock,
+.jobCredits,
+.jobCreditsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jobViewsContainer,
+.activeJobsContainer,
+.jobCreditsContainer {
+  padding: 1rem;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.jobViewsContainer {
+  border: 1px solid #7c3aed;
+  background-color: #ede9fe;
+  color: #7c3aed;
+}
+
+.activeJobsContainer {
+  border: 1px solid #2563eb;
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.jobCreditsContainer {
+  color: #b45309;
+  border: 1px solid #b45309;
+  background-color: #fef3c7;
+}
+
+.activeJobsNum,
+.jobViews,
+.jobCreditsNum {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.jobViewsBlock {
+  flex-direction: column;
+}
+
+.jobTitle {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  display: block;
+}
+
+.totalJobViewsGrid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  padding: 0;
+}
+
+.tileLayout {
+  width: 100%;
+}
+
+.dashboardAside {
+  width: 15rem;
+}
+.Nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  color: black;
+  background-image: linear-gradient(to right, red , yellow);
+  /* background-color: aliceblue; */
+
+}
+/* enable absolute positioning */ .inner-addon { position: relative; } /* style icon */ 
+.inner-addon .glyphicon { position: absolute; padding: 10px; pointer-events: none; } 
+/* align icon */ 
+.left-addon .glyphicon { left: 0px;} .right-addon .glyphicon { right: 0px;} 
+/* add padding */ 
+.left-addon input { padding-left: 30px; } 
+.right-addon input { padding-right: 30px; }
+
+
