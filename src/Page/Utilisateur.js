@@ -2,9 +2,9 @@
 import "antd/dist/antd.css";
 import{Table, Button,Modal,Input} from "antd";
 import{useState} from 'react';
-import {EditOutlined, DeleteOutlined} from '@ant-design/icons'
-
+import {EditOutlined, DeleteOutlined} from '@ant-design/icons';
 function Utilisateur() {
+   
 const [IsEditing, setIsEditing] = useState(false)
 const [editingStudent, setEditingStudent] = useState(null) 
 const [dataSource,  setDataSource] = useState([
@@ -113,8 +113,9 @@ const [dataSource,  setDataSource] = useState([
     return(
 <div className="App">
     <header className="App-header">
-        <div class="bg-green-300 py-8">
-        <Button onClick={onAddStudent} class="inline-block align-middle ml-72 w-28">Add new User</Button>
+        <div class=" py-18">
+        
+        <center><Button onClick={onAddStudent} class="inline-block text-red-500 italic py-12 align-middle ml-28 w-28">Add new User</Button></center>
         <Table columns= {columns} dataSource={dataSource}> </Table>
         <Modal
         title="Edit user"
